@@ -33,7 +33,6 @@
 
     <p>
         <b><li>Enoncé:</b> </li>  Identifier les produits générant le plus de chiffre d'affaires et de volumes de vente pour optimiser l'approvisionnement et la stratégie commerciale de KDou.
-        On veut le chiffre d’affaire généré (montant total des ventes de KDou) par
         <b><li>Construction:</b> </li> La requête joint les tables Produit et DetailCommande via RefProd. La fonction VAL() convertit QteParUnit (stocké en texte) en valeur numérique pour les calculs. Le GROUP BY sur NomProd agrège les données par produit. Le calcul du chiffre d'affaires (Quantite × QteParUnit) et le tri décroissant identifient les produits prioritaires pour l'optimisation stratégique de KDou.
         <b><li> Code Sql:</b></li> </p>
     <p>SELECT     P.NomProd,
